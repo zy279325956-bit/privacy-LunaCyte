@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>隐私政策</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                         "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 20px 48px;
+            line-height: 1.8;
+            color: #333;
+            font-size: 15px;
+        }
+        h1 { font-size: 26px; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 6px; }
+        .meta { color: #888; font-size: 13px; margin-bottom: 20px; }
+        h2 { font-size: 17px; margin-top: 32px; margin-bottom: 8px;
+             border-left: 3px solid #1976D2; padding-left: 8px; }
+        p, li { font-size: 15px; margin: 6px 0; }
+        ul { padding-left: 20px; }
+        li { margin: 6px 0; }
+        .tip {
+            background: #FFF8E1; border-left: 3px solid #FFC107;
+            padding: 10px 14px; margin: 14px 0; border-radius: 2px;
+        }
+        hr { border: none; border-top: 1px solid #eee; margin: 32px 0; }
+        footer { text-align: center; color: #aaa; font-size: 13px; }
+        a { color: #1976D2; }
+    </style>
+</head>
+<body>
+
+<h1>隐私政策</h1>
+<div class="meta">更新日期：2026年5月28日 &nbsp;|&nbsp; 生效日期：2026年5月28日</div>
+
+<p>
+    莱和益检（以下简称"本应用"）是与荧光免疫层析检测仪（型号 FM-IVY-103）配套使用的专业工具类应用，
+    用于连接检测仪器、接收并记录 LH、FSH、HCG 等激素水平的检测结果，
+    并以曲线方式辅助用户查看历史变化趋势。
+</p>
+
+<div class="tip">
+    <strong>核心承诺：</strong>本应用<strong>完全离线运行</strong>，
+    所有数据仅保存在您的设备本地，我们不收集、不上传、不共享任何检测数据或个人信息。
+</div>
+
+<h2>一、信息收集与使用</h2>
+<p>本应用<strong>不需要注册账号，不要求填写姓名、身份证号、手机号等任何身份信息</strong>。检测过程中仅会在您的设备本地生成以下数据：</p>
+<ul>
+    <li><strong>检测结果</strong>：试剂类型（LH / FSH / HCG）、测量数值（mIU/mL）、定性结论（阴性 / 阳性 / 强阳）及对应日期时间；该数据可能反映您的生殖健康状态，属于健康类敏感信息。</li>
+    <li><strong>蓝牙设备信息</strong>：已扫描或已配对仪器的设备名称（FM-IVY-103）与 MAC 地址，用于快速识别和重连。</li>
+</ul>
+<p>上述所有信息<strong>仅保存在您设备的本地数据库（SQLite）中</strong>，不会上传至任何服务器，我们无法访问。</p>
+<p>您可以在「记录」页面长按任意一条检测记录将其删除；卸载应用后，本地数据库将一并删除。</p>
+
+<h2>二、设备权限说明</h2>
+<p>为实现应用功能，我们会申请以下系统权限：</p>
+<ul>
+    <li>
+        <strong>蓝牙权限（附近设备 / BLUETOOTH_SCAN、BLUETOOTH_CONNECT）</strong>：
+        用于搜索并连接型号为 FM-IVY-103 的检测仪器，接收其发送的检测数据。
+        蓝牙数据仅在本应用与仪器之间直接传输，不经过任何服务器，也不会扫描或收集附近其他蓝牙设备的信息。
+    </li>
+    <li>
+        <strong>位置权限（ACCESS_FINE_LOCATION，仅在 Android 11 及以下设备申请）</strong>：
+        这是 Android 系统在旧版本上对蓝牙扫描的强制要求，<strong>本应用不会读取、记录或上传您的地理位置</strong>。
+        在 Android 12 及以上设备，本应用已声明 <code>neverForLocation</code>，不申请位置权限。
+    </li>
+</ul>
+<p>上述权限仅在使用对应功能时申请，您可随时在系统设置中关闭。关闭蓝牙权限后将无法连接检测仪器，但不影响查看已保存的历史记录与曲线。</p>
+
+<h2>三、第三方组件说明</h2>
+<p>
+    本应用<strong>不集成任何第三方数据统计、广告、推送、用户行为分析或崩溃上报 SDK</strong>，
+    不会与任何第三方共享您的信息，也不会从任何远程接口下载内容。
+</p>
+
+<h2>四、数据安全</h2>
+<p>
+    所有检测数据均存储在您设备的本地数据库中。
+    我们建议您启用设备锁屏保护，并定期备份重要检测记录，以防设备损坏或丢失造成数据无法恢复。
+</p>
+<p>
+    检测结果可能反映个人生殖健康信息，请妥善保管您的设备，避免将设备交由他人使用而导致信息泄露。
+</p>
+
+<h2>五、未成年人保护</h2>
+<p>
+    本应用面向成年用户设计。如未成年人需要使用，应当在监护人指导下进行，
+    监护人应妥善保管检测结果并严格限制无关人员查阅。
+</p>
+
+<h2>六、政策更新</h2>
+<p>
+    如本政策发生变更，我们将在应用内发布更新版本并注明新的生效日期。
+    继续使用本应用即视为您接受更新后的政策。
+</p>
+
+<h2>七、联系我们</h2>
+<p>如对本政策有任何疑问或建议，请联系：</p>
+<p><strong>邮箱：</strong><a href="mailto:lyher2012@lyher.com">lyher2012@lyher.com</a></p>
+<p>我们将在收到邮件后 15 个工作日内回复。</p>
+
+<hr>
+<footer>© 2026 莱和益检</footer>
+
+</body>
+</html>
